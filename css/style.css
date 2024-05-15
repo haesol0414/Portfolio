@@ -4,7 +4,7 @@
   /* App Colors */
   --color-primary: var(--color-black);
   --color-primary-variant: var(--color-gray);
-  --color-accent: var(--color-pink);
+  --color-accent: var(--color-purple);
   --color-accent-variant: var(--color-orange);
   --color-text: var(--color-white);
 
@@ -14,8 +14,8 @@
   --color-blue: #03e8f9;
   --color-orange: #fd6413;
   --color-gray: #1b1e26;
-  --color-purple: #bd8dcb;
-  --color-pink: #cf6db8;
+  /* --color-pink: #bd8dcb; */
+  --color-purple: #9a48ff;
 
   /* Size */
   --size-max-width: 1200px;
@@ -72,7 +72,7 @@ button:focus {
 
 .title {
   font-size: 2.5rem;
-  margin: 1rem 0;
+  margin: 1rem 0 3rem 0;
 }
 
 .description {
@@ -133,7 +133,7 @@ button:focus {
 }
 
 #home {
-  background-color: var(--color-purple);
+  background-color: var(--color-primary);
   color: var(--color-text);
   padding: 5rem 1rem;
   padding-top: 7rem;
@@ -143,16 +143,19 @@ button:focus {
 .home__image {
   width: 250px;
   height: 250px;
+  box-shadow: 5px 5px rgba(109, 40, 217, 0.4), 10px 10px rgba(109, 40, 217, 0.3),
+    15px 15px rgba(109, 40, 217, 0.2), 20px 20px rgba(109, 40, 217, 0.1),
+    25px 25px rgba(109, 40, 217, 0.05);
   /* 이미지 비율 유지 */
   object-fit: cover;
   border-radius: 100%;
-  border: 3px solid var(--color-accent);
+  /* border: 2px solid var(--color-accent); */
   margin-bottom: 2rem;
 }
 
 .home__title {
-  font-size: 3rem;
-  margin-bottom: 0.2rem;
+  font-size: 2.8rem;
+  margin: 0.5rem 0;
 }
 
 .home__title--strong {
@@ -185,7 +188,7 @@ button:focus {
   display: flex;
   justify-content: space-between;
   gap: 1rem;
-  margin: 2.5rem 0;
+  margin: 3rem 0;
 }
 
 .major {
@@ -218,6 +221,7 @@ button:focus {
 
 .educations {
   text-align: start;
+  margin: 3.8rem 0 0.6rem 0;
 }
 
 .education {
@@ -228,17 +232,19 @@ button:focus {
 }
 
 .education__name {
+  margin-left: 0.5rem;
   color: var(--color-primary);
 }
 
 .education__period {
+  margin-left: 0.5rem;
   color: var(--color-primary);
   font-size: 0.8rem;
 }
 
 .education__image {
-  width: 98px;
-  height: 50px;
+  width: 120px;
+  height: 30px;
 }
 
 /* Skills */
@@ -250,7 +256,7 @@ button:focus {
 .skills {
   display: grid;
   grid-template-columns: 6fr 4fr;
-  margin: 4rem 3rem 2rem 3rem;
+  margin: 4rem 3rem 3rem 3rem;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
@@ -370,6 +376,7 @@ button:focus {
   /* 일정하게(1배율로) 2개의 로우 생성 */
   /* grid-template-rows: repeat(2, 1fr); */
   gap: 1rem;
+  margin-bottom: 3rem;
 }
 
 .project {
@@ -423,6 +430,7 @@ button:focus {
 }
 .contact__links {
   display: flex;
+  color: var(--color-accent);
   justify-content: center;
   align-items: center;
   padding: 0.4rem;
@@ -432,7 +440,7 @@ button:focus {
 }
 
 .contact__links:hover {
-  color: var(--color-accent);
+  color: var(--color-white);
 }
 
 .contact__link {
@@ -446,7 +454,7 @@ button:focus {
 
 .rights {
   font-size: 0.8rem;
-  margin-top: 1.4rem;
+  margin-top: 2rem;
 }
 
 /* Certificate */
