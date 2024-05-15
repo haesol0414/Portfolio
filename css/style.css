@@ -139,21 +139,21 @@ button:focus {
   object-fit: cover;
   border-radius: 100%;
   border: 3px solid var(--color-accent);
-  margin-bottom: 1.4rem;
+  margin-bottom: 2rem;
 }
 
 .home__title {
   font-size: 3rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.2rem;
 }
 
 .home__title--strong {
   color: var(--color-accent);
 }
 
-.home__desciption {
+/* .home__desciption {
   font-size: 1.3rem;
-}
+} */
 
 .home__contact {
   display: inline-block;
@@ -182,6 +182,7 @@ button:focus {
 
 .major {
   background-color: var(--color-primary-variant);
+  width: 40rem;
   padding: 2rem 1rem;
   color: var(--color-text);
   border-radius: 1rem;
@@ -286,13 +287,18 @@ button:focus {
 .skill__name {
   color: var(--color-accent);
   margin-bottom: 0.2rem;
+  font-weight: bold;
 }
 
 .skill__detail {
   display: flex;
   flex-direction: column;
+  justify-content: start;
   align-items: start;
-  width: 100%;
+  list-style: disc;
+  padding-left: 1rem;
+  text-align: left;
+  gap: 0.4rem;
 }
 
 /* Projects */
@@ -534,6 +540,13 @@ button:focus {
 
   .skills {
     grid-template-columns: 1fr;
+  }
+  .skills__tools > :last-child {
+    margin-bottom: 1rem;
+  }
+
+  .skills__etc > :last-child {
+    margin-bottom: 1rem;
   }
 
   .categories {

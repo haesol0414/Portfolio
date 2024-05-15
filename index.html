@@ -64,17 +64,19 @@
           <strong class=".home__title--strong">사용자 중심 개발</strong>을
           추구하는 개발자 이해솔입니다!
         </h2>
-        <p class="home__desciption">야옹</p>
+        <!-- <p class="home__desciption"></p> -->
         <a class="home__contact" href="#contact">Contact Me</a>
       </section>
       <!-- About -->
       <section id="about" class="section max-container">
         <h2 class="title">About me</h2>
         <p class="description">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam
-          alias adipisci illum consequuntur? Minima, ipsa quia dolores illum
-          commodi cumque aut a cupiditate molestias non at adipisci distinctio
-          reprehenderit est.
+          “ 끊임없는 성장을 통해 사용자 중심의 개발자로 거듭나고자 합니다.
+          다양한 경우의 수를 철저히 고려하며 문제 해결에 전념하고, 직관적인 UI에
+          가치를 두고 있습니다. 사용자 경험을 위해 끊임없이 노력하며, 차근차근
+          문제를 해결하는 저의 모습을 통해 팀에 긍정적인 기여를 하고자 합니다.
+          현재 모습에 안주하지 않고 자기 계발을 멈추지 않는 모습으로 팀원들과
+          좋은 에너지를 공유하고 싶습니다. “
         </p>
         <ul class="majors">
           <li class="major">
@@ -104,7 +106,9 @@
               alt="삼육대로고"
             />
             <div>
-              <p class="education__name">삼육대학교 컴퓨터공학 전공</p>
+              <p class="education__name">
+                삼육대학교 컴퓨터공학 전공 컴퓨터 공학 전공 ( 4.0 / 4.5 )
+              </p>
               <p class="education__period">2021.03 ~ 2023.08</p>
             </div>
           </li>
@@ -138,52 +142,85 @@
               <ul>
                 <li class="skill">
                   <div class="skill__name"><span>HTML5</span></div>
-                  <div class="skill__detail">
-                    <p>이 스킬에 대한 나의 이해도</p>
-                    <p>이 스킬에 대한 나의 이해도</p>
-                  </div>
+                  <ul class="skill__detail">
+                    <li>
+                      HTML5의 시맨틱 태그와 최신 API를 활용해 구조적이고
+                      기능적인 웹 페이지를 구현할 수 있습니다.
+                    </li>
+                  </ul>
                 </li>
                 <li class="skill">
-                  <div class="skill__name"><span>CSS</span></div>
-                  <div class="skill__detail">
-                    <p>이 스킬에 대한 나의 이해도</p>
-                    <p>이 스킬에 대한 나의 이해도</p>
+                  <div class="skill__name">
+                    <span>CSS, SCSS, Styled-component</span>
                   </div>
+                  <ul class="skill__detail">
+                    <li>
+                      미디어 쿼리와 Flexbox, Grid 레이아웃 기술을 활용해 반응형
+                      디자인을 구현할 수 있습니다.
+                    </li>
+                    <li>
+                      SCSS의 nesting 기술을 활용하여 스타일링 구조를 효과적으로
+                      유지할 수 있습니다.
+                    </li>
+                    <li>
+                      Styled-components를 사용하여 컴포넌트 기반의 모듈화된
+                      스타일링을 구현할 수 있습니다.
+                    </li>
+                  </ul>
                 </li>
                 <li class="skill">
                   <div class="skill__name"><span>JavaScript</span></div>
-                  <div class="skill__detail">
-                    <p>이 스킬에 대한 나의 이해도</p>
-                    <p>이 스킬에 대한 나의 이해도</p>
-                  </div>
+                  <ul class="skill__detail">
+                    <li>
+                      ES6 이상의 문법을 활용하여 코드를 작성할 수 있습니다.
+                    </li>
+                    <li>
+                      map, reduce 등을 활용하여 코드의 효율성과 가독성을 높일 수
+                      있습니다.
+                    </li>
+                  </ul>
                 </li>
                 <li class="skill">
                   <div class="skill__name"><span>TypeScript</span></div>
-                  <div class="skill__detail">
-                    <p>이 스킬에 대한 나의 이해도</p>
-                    <p>이 스킬에 대한 나의 이해도</p>
-                  </div>
+                  <ul class="skill__detail">
+                    <li>
+                      TypeScript의 type과 interface의 차이를 이해하고, 구현할 수
+                      있습니다.
+                    </li>
+                    <li>Generic을 사용하여 타입 안정성을 높일 수 있습니다.</li>
+                  </ul>
                 </li>
                 <li class="skill">
                   <div class="skill__name"><span>React</span></div>
-                  <div class="skill__detail">
-                    <p>이 스킬에 대한 나의 이해도</p>
-                    <p>이 스킬에 대한 나의 이해도</p>
-                  </div>
+                  <ul class="skill__detail">
+                    <li>
+                      useState, useEffect와 같은 훅을 사용할 수 있고, 함수형
+                      컴포넌트를 구현할 수 있습니다.
+                    </li>
+                    <li>
+                      recoil과 같은 전역 상태 관리 라이브러리를 사용할 수
+                      있습니다.
+                    </li>
+                  </ul>
                 </li>
                 <li class="skill">
                   <div class="skill__name">
                     <span>Node.js, Express.js</span>
                   </div>
-                  <div class="skill__detail">
-                    <p>이 스킬에 대한 나의 이해도</p>
-                  </div>
+                  <ul class="skill__detail">
+                    <li>
+                      MVC 아키텍처의 Router-Controller-Service 패턴을 이해하고,
+                      그에 맞는 코드를 구현할 수 있습니다.
+                    </li>
+                  </ul>
                 </li>
                 <li class="skill">
                   <div class="skill__name"><span>MongoDB, Mongoose</span></div>
-                  <div class="skill__detail">
-                    <p>이 스킬에 대한 나의 이해도</p>
-                  </div>
+                  <ul class="skill__detail">
+                    <li>
+                      Query를 사용하여 데이터를 가공 및 추출 할 수 있습니다.
+                    </li>
+                  </ul>
                 </li>
               </ul>
             </section>
@@ -270,7 +307,7 @@
       </section>
       <!-- Certificate -->
       <section id="certificate" class="section max-container">
-        <h2 class="title">Certificate</h2>
+        <h2 class="title">Certificate & Language</h2>
         <ul class="certificates">
           <li class="certificate">
             <p class="certificate__date">2023.06</p>
@@ -282,7 +319,7 @@
           </li>
           <li class="certificate">
             <p class="certificate__date">2022.12</p>
-            <div class="certificate__name">TOEIC - 875</div>
+            <div class="certificate__name">TOEIC 875</div>
           </li>
           <li class="certificate">
             <p class="certificate__date">2022.09</p>
