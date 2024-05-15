@@ -4,7 +4,7 @@
   /* App Colors */
   --color-primary: var(--color-black);
   --color-primary-variant: var(--color-gray);
-  --color-accent: var(--color-blue);
+  --color-accent: var(--color-pink);
   --color-accent-variant: var(--color-orange);
   --color-text: var(--color-white);
 
@@ -14,6 +14,8 @@
   --color-blue: #03e8f9;
   --color-orange: #fd6413;
   --color-gray: #1b1e26;
+  --color-purple: #bd8dcb;
+  --color-pink: #cf6db8;
 
   /* Size */
   --size-max-width: 1200px;
@@ -80,7 +82,7 @@ button:focus {
 
 /* Header */
 .header {
-  background-color: #050a13;
+  background-color: var(--color-purple);
   position: fixed;
   padding: 1rem;
   top: 0;
@@ -89,6 +91,12 @@ button:focus {
   justify-content: space-between;
   align-items: center;
   z-index: 1;
+  transition: all 300ms ease;
+}
+
+.header--other {
+  background-color: var(--color-primary);
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .header__logo {
@@ -125,7 +133,7 @@ button:focus {
 }
 
 #home {
-  background-color: var(--color-primary);
+  background-color: var(--color-purple);
   color: var(--color-text);
   padding: 5rem 1rem;
   padding-top: 7rem;
@@ -242,7 +250,7 @@ button:focus {
 .skills {
   display: grid;
   grid-template-columns: 6fr 4fr;
-  margin: 2rem 3rem;
+  margin: 4rem 3rem 2rem 3rem;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
@@ -540,7 +548,9 @@ button:focus {
 
   .skills {
     grid-template-columns: 1fr;
+    margin-top: 3rem;
   }
+
   .skills__tools > :last-child {
     margin-bottom: 1rem;
   }
