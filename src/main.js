@@ -1,3 +1,5 @@
+'use strict'
+
 const header = document.querySelector(".header");
 // 헤더의 높이 측정
 // Rect = 사각형 (모서리 좌표, 너비, 높이 확인 가능)

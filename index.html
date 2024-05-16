@@ -28,7 +28,9 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
     <!-- Javascript -->
-    <script src="src/main.js" defer></script>
+    <script type="module" src="src/main.js" defer></script>
+    <script type="module" src="src/projects.js" defer></script>
+    <script type="module" src="src/active_menu.js" defer></script>
   </head>
   <body>
     <!-- Header -->
@@ -252,23 +254,28 @@
           <!-- <p class="description">Projects</p> -->
           <ul class="categories">
             <li>
-              <button class="category">
-                All <span class="category__count">3</span>
+              <button class="category category--selected" data-category="all">
+                All
               </button>
             </li>
             <li>
-              <button class="category category--selected">
-                Front-end <span class="category__count">2</span>
+              <button class="category" data-category="full-stack">
+                Full-stack
               </button>
             </li>
             <li>
-              <button class="category">
-                Back-end <span class="category__count">1</span>
+              <button class="category" data-category="front-end">
+                Front-end
+              </button>
+            </li>
+            <li>
+              <button class="category" data-category="back-end">
+                Back-end
               </button>
             </li>
           </ul>
           <ul class="projects">
-            <li class="project">
+            <li class="project" data-type="full-stack">
               <a href="#" target="_blank">
                 <img
                   src="images/projects/project1.webp"
@@ -276,12 +283,12 @@
                   class="project__img"
                 />
                 <div class="project__metadata">
-                  <h3 class="project__title">Project Name</h3>
+                  <h3 class="project__title">Nostalgia</h3>
                   <p>project summary</p>
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project" data-type="front-end">
               <a href="#" target="_blank">
                 <img
                   src="images/projects/project2.webp"
@@ -289,12 +296,12 @@
                   class="project__img"
                 />
                 <div class="project__metadata">
-                  <h3 class="project__title">Project Name</h3>
+                  <h3 class="project__title">Trackter</h3>
                   <p>project summary</p>
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project" data-type="back-end">
               <a href="#" target="_blank">
                 <img
                   src="images/projects/project3.webp"
@@ -302,7 +309,7 @@
                   class="project__img"
                 />
                 <div class="project__metadata">
-                  <h3 class="project__title">Project Name</h3>
+                  <h3 class="project__title">82People</h3>
                   <p>project summary</p>
                 </div>
               </a>
