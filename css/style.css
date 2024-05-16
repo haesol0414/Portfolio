@@ -55,7 +55,7 @@ button {
 }
 
 button:focus {
-  outline: 1px solid var(--color-accent);
+  outline: 1px solid transparent;
 }
 
 /* Common */
@@ -99,6 +99,15 @@ button:focus {
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
+.header__toggle {
+  display: none;
+  color: var(--color-white);
+  font-size: 1.5rem;
+  position: absolute;
+  top: 1.3rem;
+  right: 1rem;
+}
+
 .header__logo {
   display: flex;
   align-items: center;
@@ -120,7 +129,9 @@ button:focus {
 }
 
 .header__menu__item {
+  display: block;
   padding: 8px 16px;
+  border-bottom: 1px solid transparent;
 }
 
 .header__menu__item:hover {
@@ -286,8 +297,8 @@ button:focus {
 
 .skills__etc {
   padding: 1rem;
-  background-color: var(--color-primary);
-  filter: brightness(150%);
+  background-color: #101623;
+  /* filter: brightness(150%); */
 }
 
 .skill {
@@ -428,6 +439,7 @@ button:focus {
   background-color: var(--color-primary);
   color: var(--color-text);
 }
+
 .contact__links {
   display: flex;
   color: var(--color-accent);
@@ -492,21 +504,23 @@ button:focus {
 .arrow-up {
   background-color: var(--color-primary);
   position: fixed;
-  bottom: 3rem;
-  right: 2rem;
-  font-size: 3rem;
-  width: 4.5rem;
-  height: 4.5;
+  bottom: 3.5rem;
+  right: 2.5rem;
+  font-size: 1.8rem;
+  width: 3rem;
+  height: 3rem;
   border-radius: 100%;
   text-align: center;
-  box-shadow: 5px 5px 0px 0px var(--color-accent);
+  box-shadow: 2px 2px rgba(109, 40, 217, 0.4), 4px 4px rgba(109, 40, 217, 0.3),
+    6px 6px rgba(109, 40, 217, 0.2), 8px 8px rgba(109, 40, 217, 0.1),
+    10px 10px rgba(109, 40, 217, 0.05);
   transition: opacity 300ms ease-in;
 }
 
 /* 반응형 스타일링 */
 @media screen and (max-width: 768px) {
   .section {
-    padding: 3rem 2rem;
+    padding: 4rem 2rem;
   }
 
   .title {
@@ -520,13 +534,25 @@ button:focus {
   .header {
     flex-direction: column;
     align-items: start;
+    background-color: var(--color-primary);
   }
 
   .header__menu {
+    display: none;
     flex-direction: column;
     text-align: center;
-    padding: 1rem 4rem;
+    margin: 1rem 4rem;
     gap: 1rem;
+  }
+
+  .header__toggle {
+    display: block;
+    cursor: pointer;
+  }
+
+  /* header__menu와 open 클래스를 함께 가지고 있다면 */
+  .header__menu.open {
+    display: flex;
   }
 
   .header__nav {

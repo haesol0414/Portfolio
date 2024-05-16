@@ -35,3 +35,17 @@ document.addEventListener("scroll", () => {
     arrowUp.style.opacity = 0;
   }
 });
+
+// NavBar 토글 버튼 클릭 처리
+const navBarMenu = document.querySelector(".header__menu");
+const navBarToggle = document.querySelector(".header__toggle");
+
+navBarToggle.addEventListener("click", () => {
+  // classList.toggle : 클릭 될 때 마다 open 클래스를 on(넣기) 또는 off(빼기)
+  navBarMenu.classList.toggle("open");
+});
+
+// NavBar 메뉴 클릭 시 메뉴 닫아줌
+navBarMenu.addEventListener("click", () => {
+  navBarMenu.classList.remove("open");
+});
