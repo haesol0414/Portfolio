@@ -6,12 +6,12 @@
 // 마지막에 footer(contact)가 완전히 보인다면 certificate가 아닌 contact 활성화
 
 const sectionIds = [
-  "#home",
-  "#about",
-  "#skills",
-  "#projects",
-  "#certificate",
-  "#contact",
+  '#home',
+  '#about',
+  '#skills',
+  '#projects',
+  '#certificate',
+  '#contact',
 ];
 const sections = sectionIds.map((id) => document.querySelector(id));
 const navItems = sectionIds.map((id) =>
@@ -21,7 +21,7 @@ const visibleSections = sectionIds.map(() => false); // 현재 섹션들이 보�
 let activeNavItem = navItems[0];
 
 const options = {
-  rootMargin: "-20% 0px 0px 0px",
+  rootMargin: '-20% 0px 0px 0px',
   threshold: [0, 0.98],
 };
 // 관찰중인 section에 변화가 생기면 observerCallback 함수 자동 호출되며 변경이 발생한 다수의 entries가 전달
@@ -62,7 +62,7 @@ function selectNavItem(currentNavIndex) {
   if (!currentNavItem) {
     return;
   }
-  activeNavItem.classList.remove("active");
+  activeNavItem.classList.remove('active');
   activeNavItem = currentNavItem;
-  activeNavItem.classList.add("active");
+  activeNavItem.classList.add('active');
 }
