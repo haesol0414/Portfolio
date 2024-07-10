@@ -28,18 +28,21 @@
       src="https://kit.fontawesome.com/91d1b654d5.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Typeit -->
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
     <!-- Javascript -->
     <script type="module" src="src/main.js" defer></script>
     <script type="module" src="src/projects.js" defer></script>
     <script type="module" src="src/active_menu.js" defer></script>
+    <script type="module" src="src/type.js" defer></script>
   </head>
   <body>
     <!-- Header -->
     <header class="header">
       <div class="header__logo">
-        <img class="header__logo__img" src="images/kitty.png" alt="logo"/ >
+        <img class="header__logo__img" src="images/haesol.png" alt="logo"/ >
         <h1 class="header__logo__title"><a href="#">Haesol</a></h1>
       </div>
       <nav class="header__nav">
@@ -65,15 +68,15 @@
         <div class="home__container">
           <img
             class="home__image"
-            src="images/kitty.png"
+            src="images/haesol.png"
             alt="Haesol's profile"
           />
           <h2 class="home__title">
-            안녕하십니까! <br />
-            <strong class=".home__title--strong">사용자 중심 개발</strong>을
-            추구하는 개발자 이해솔입니다!
+            안녕하십니까 !<br />
+            <strong class="home__title--strong"> </strong>
+            이해솔 입니다 !
           </h2>
-          <!-- <p class="home__desciption"></p> -->
+          <p class="home__desciption">Junior Front-end Developer</p>
           <a class="home__contact" href="#contact">Contact Me</a>
         </div>
       </section>
@@ -83,12 +86,19 @@
         <div class="introduction">
           <div class="introduction__image">👩🏻‍💻</div>
           <div class="introduction__bubble">
-            : 끊임없는 성장을 통해 사용자 중심의 개발자로 거듭나고자 합니다.
-            사용자 경험을 위해 끊임없이 노력하며, 직관적인 UI에 가장 큰 가치를
-            두고 있습니다. 또한, 다양한 경우의 수를 철저히 고려하며 차근차근
-            문제를 해결하는 저의 모습을 통해 팀에 긍정적인 기여를 하고자 합니다.
-            현재 모습에 안주하지 않고 자기 개발을 멈추지 않는 모습으로 팀원들과
-            좋은 에너지를 공유하고 싶습니다 !
+            : 끊임없는 성장을 통해
+            <strong class="introduction__strong">사용자 중심의 개발자</strong>로
+            거듭나고자 합니다. 그 중에서도
+            <strong class="introduction__strong">편리하고 직관적인 UI</strong>에
+            가장 큰 가치를 두고 있습니다. <br />
+            또한,
+            <strong class="introduction__strong">다양한 경우의 수</strong>를
+            철저히 고려하며 차근차근 문제를 해결하는 저의 모습을 통해 팀에
+            긍정적인 기여를 하고자 합니다. <br />
+            현재 모습에 안주하지 않고
+            <strong class="introduction__strong"
+              >자기 개발을 멈추지 않는 모습</strong
+            >으로 팀원들과 좋은 에너지를 공유하고 싶습니다 !
           </div>
         </div>
         <ul class="majors">
@@ -133,7 +143,9 @@
               alt="엘리스로고"
             />
             <div>
-              <p class="education__name">엘리스 SW 엔지니어 트랙 수료</p>
+              <p class="education__name">
+                엘리스 SW 엔지니어 프론트엔드 개발자 트랙 수료
+              </p>
               <p class="education__period">2023.05 ~ 2023.09</p>
             </div>
           </li>
@@ -212,7 +224,7 @@
                 </li>
                 <li class="skill">
                   <div class="skill__name">
-                    <span>Node.js, Express.js</span>
+                    <span>Node.js</span>
                   </div>
                   <ul class="skill__detail">
                     <li>
@@ -222,7 +234,7 @@
                   </ul>
                 </li>
                 <li class="skill">
-                  <div class="skill__name"><span>MongoDB, Mongoose</span></div>
+                  <div class="skill__name"><span>MongoDB</span></div>
                   <ul class="skill__detail">
                     <li>
                       Query를 사용하여 데이터를 가공 및 추출 할 수 있습니다.
@@ -275,7 +287,7 @@
           </ul>
           <ul class="projects">
             <li class="project" data-type="full-stack">
-              <a href="#" target="_blank">
+              <a href="https://github.com/haesol0414/Nostalgia" target="_blank">
                 <img
                   src="images/projects/project1.webp"
                   alt="project1"
@@ -301,7 +313,7 @@
               </a>
             </li>
             <li class="project" data-type="back-end">
-              <a href="#" target="_blank">
+              <a href="https://github.com/haesol0414/82people" target="_blank">
                 <img
                   src="images/projects/project3.webp"
                   alt="project3"
