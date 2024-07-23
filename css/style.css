@@ -276,6 +276,7 @@ button:focus {
 
 .educations {
   text-align: start;
+  color: var(--color-primary);
   margin: 3.8rem 0 0.6rem 0;
 }
 
@@ -485,6 +486,7 @@ button:focus {
 .project__img {
   border-radius: 8px;
   width: 100%;
+  height: 100%;
 }
 
 .project__metadata {
