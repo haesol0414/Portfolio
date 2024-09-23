@@ -556,7 +556,7 @@ button:focus {
 
 .contact__links {
   display: flex;
-  color: var(--color-mint);
+  color: var(--color-white);
   justify-content: center;
   align-items: center;
   padding: 0.4rem;
@@ -566,7 +566,7 @@ button:focus {
 }
 
 .contact__links:hover {
-  color: var(--color-white);
+  color: var(--color-accent);
 }
 
 .contact__link {
