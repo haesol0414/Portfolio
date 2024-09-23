@@ -1,5 +1,4 @@
 /* Global */
-/* 프로젝트카테고리이상함 */
 
 :root {
   /* App Colors */
@@ -11,24 +10,25 @@
 
   /* Colors */
   --color-white: #ffffff;
-  --color-black: #050a13;
-  --color-blue: #78b3f6;
+  --color-black: #09101b;
+  --color-blue: #0b2254;
   --color-mint: #21deff;
   --color-orange: #fd6413;
-  --color-gray: rgb(93, 98, 111);
+  --color-gray: #1b1e26;
   --color-pink: #fac6dd;
   --color-purple: #9a48ff;
   --color-skyblue: #b3d2f6;
 
-  /* Background */
-  --home-bg-gradient: radial-gradient(
-    circle,
-    rgba(238, 174, 202, 1) 8%,
-    rgb(179, 210, 246) 100%
-  );
-
   /* Size */
   --size-max-width: 1200px;
+
+  /* Background */
+  --home-bg-svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='500' height='500' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%2322202F' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%2335334A'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
+  --bg-gradient: inear-gradient(
+    180deg,
+    rgba(8, 26, 60, 1) 0%,
+    rgba(5, 10, 19, 1) 100%
+  );
 
   /* Divider */
   --divider-single-wave: url("data:image/svg+xml;utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201200%20120'%20preserveAspectRatio='none'%3E%3Cpath%20d='M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-0.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z'%3E%3C/path%3E%3C/svg%3E");
@@ -93,11 +93,12 @@ button:focus {
 .title {
   font-size: 2.5rem;
   margin: 1rem 0 3rem 0;
-  color: var(--color-blue);
-  text-shadow: 2px 1px 2px rgba(255, 255, 255, 0.7);
+  color: #ebebeb;
+  text-shadow: 2px 1px 2px rgba(106, 106, 106, 0.7);
 }
 
 .title.--contrast {
+  color: var(--color-primary);
   text-shadow: 2px 1px 2px rgba(190, 220, 255, 0.7);
 }
 
@@ -121,8 +122,8 @@ button:focus {
 }
 
 .header--other {
-  background-color: var(--color-pink);
-  box-shadow: 0 4px 4px rgb(238, 174, 202, 0.7);
+  background-color: var(--color-primary);
+  box-shadow: 0 4px 4px rgba(255, 255, 255, 0.7);
 }
 
 .header__toggle {
@@ -161,19 +162,19 @@ button:focus {
 }
 
 .header__menu__item:hover {
-  color: var(--color-blue);
+  color: var(--color-primary);
 }
 
 .header__menu__item.active {
-  border: 1px solid var(--color-skyblue);
-  background-color: var(--color-skyblue);
+  border: 1px solid var(--color-accent);
+  background-color: var(--color-accent);
   border-radius: 4px;
 }
 
 #home {
   position: relative;
-  /* background-color: rgb(238, 174, 202); */
-  background: var(--color-pink);
+  background-color: var(--color-primary);
+  background-image: var(--home-bg-svg);
   color: var(--color-text);
   padding: 5rem 1rem;
   padding-top: 7rem;
@@ -198,10 +199,10 @@ button:focus {
 .home__image {
   width: 250px;
   height: 250px;
-  box-shadow: 0 20px 50px rgba(233, 172, 206, 0.7);
   object-fit: cover;
   border-radius: 100%;
-  border: 2px solid var(--color-pink);
+  /* border: 2px solid var(--color-primary); */
+  /* box-shadow: 0 20px 50px rgba(186, 186, 186, 0.3); */
   margin-bottom: 1rem;
 }
 
@@ -211,12 +212,11 @@ button:focus {
 }
 
 .home__title--strong {
-  color: var(--color-blue);
+  color: var(--color-mint);
 }
 
 .home__desciption {
   font-weight: bold;
-  /* color: var(--color-skyblue); */
   font-size: 1.1rem;
   padding: 0.5rem 0;
 }
@@ -232,10 +232,10 @@ button:focus {
 }
 
 .home__contact:hover {
-  background-color: var(--color-pink);
+  background-color: var(--color-mint);
   color: var(--color-white);
   /* border 밀림 현상을 없애려면 border 대신 outline 사용 */
-  outline: 2px solid var(--color-pink);
+  outline: 2px solid var(--color-mint);
 }
 
 /* About */
@@ -260,7 +260,7 @@ button:focus {
 .major__icon {
   font-size: 4rem;
   margin: 1rem 0;
-  color: var(--color-accent);
+  color: var(--color-mint);
   transition: all 300ms ease;
 }
 
@@ -330,7 +330,7 @@ button:focus {
 /* Skills */
 #skills {
   position: relative;
-  background-color: var(--color-skyblue);
+  background-color: var(--color-primary-variant);
   background-attachment: fixed;
   background-size: cover;
   color: var(--color-text);
@@ -356,15 +356,18 @@ button:focus {
   margin: 4rem 3rem 3rem 3rem;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 25px 50px -12px #3b82f620;
+  /* box-shadow: 0 25px 50px -12px #3b82f620; */
 }
 
 .skills__title {
-  color: var(--color-skyblue);
+  color: var(--color-mint);
   margin: 1rem 0;
   font-size: 1.4rem;
-  /* text-shadow: 1px 1px white; */
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.skills__title:hover {
+  transform: rotate(14deg);
 }
 
 .skills__coding {
@@ -372,13 +375,14 @@ button:focus {
   grid-row: span 2;
   padding: 1rem;
   padding-bottom: 3rem;
-  background-color: var(--color-primary-variant);
+  background-color: var(--color-primary);
   filter: brightness(90%);
 }
 
 .skills__tools {
   padding: 1rem;
   background-color: var(--color-primary-variant);
+  filter: brightness(150%);
 }
 
 .skills__etc {
@@ -396,7 +400,7 @@ button:focus {
 }
 
 .skill__name {
-  color: var(--color-skyblue);
+  color: var(--color-mint);
   margin-bottom: 0.2rem;
   font-weight: bold;
 }
@@ -415,7 +419,12 @@ button:focus {
 /* Projects */
 #projects {
   position: relative;
-  background-color: var(--color-skyblue);
+  /* background-color: var(--color-primary-variant); */
+  background: linear-gradient(
+    180deg,
+    rgba(27, 30, 38, 1) 50%,
+    rgba(5, 10, 19, 1) 100%
+  );
   background-attachment: fixed;
   background-size: cover;
   color: var(--color-text);
@@ -447,18 +456,18 @@ button:focus {
   display: block;
   position: relative;
   color: var(--color-text);
-  background-color: var(--color-blue);
+  background-color: var(--color-primary);
   font-size: 1.1rem;
   padding: 0.5rem 3rem;
   border-radius: 4px;
-  border: 1px dashed rgba(255, 255, 255, 0.7);
+  border: 1px solid var(--color-mint);
   cursor: pointer;
   /* 창 크기가 작아졌을 때 글자가 개행되지 않도록 */
   white-space: nowrap;
 }
 
 .category--selected {
-  background-color: var(--color-pink);
+  background-color: var(--color-mint);
   color: var(--color-text);
 }
 
@@ -521,13 +530,13 @@ button:focus {
   margin: 0.5rem;
   width: 50px;
   height: 2px;
-  background-color: var(--color-pink);
+  background-color: var(--color-mint);
 }
 
 /* Footer */
 #contact {
   position: relative;
-  background-color: var(--color-skyblue);
+  background-color: var(--color-primary);
   color: var(--color-text);
 }
 
@@ -547,7 +556,7 @@ button:focus {
 
 .contact__links {
   display: flex;
-  color: var(--color-blue);
+  color: var(--color-mint);
   justify-content: center;
   align-items: center;
   padding: 0.4rem;
@@ -588,7 +597,7 @@ button:focus {
 
 .certificate__date {
   font-size: 1.3rem;
-  color: var(--color-blue);
+  color: var(--color-accent);
   font-weight: bold;
 }
 
@@ -600,7 +609,7 @@ button:focus {
   border-radius: 8px;
   transition: all 250ms ease-in;
   color: var(--color-gray);
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .certificate__name:hover {
@@ -642,7 +651,7 @@ button:focus {
   .header {
     flex-direction: column;
     align-items: start;
-    background-color: var(--color-pink);
+    background-color: var(--color-primary);
   }
 
   .header__menu {
